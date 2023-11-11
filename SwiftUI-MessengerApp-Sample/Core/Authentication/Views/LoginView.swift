@@ -50,12 +50,15 @@ struct LoginView: View {
                 } //: Btn
                 
                 NavigationLink {
-                    
+                    CreateEmailView()
                 } label: {
                     HStack {
-                        
+                        Text("No account?")
+                            .foregroundStyle(.black)
+                        Text("Sign up")
                     } //: HStack
                 } //: NavLink
+                Spacer()
             } //: VStack
         } //: Nav
     }
